@@ -1,0 +1,7 @@
+<ng-container *ngIf="isMobile; else desktop">
+  <app-store-mobile></app-store-mobile>
+</ng-container>
+
+<ng-template #desktop>
+  <app-store-desktop></app-store-desktop>
+</ng-template>
