@@ -9,7 +9,7 @@ const routes: Routes = [
   },
   {
     path: 'store',
-    loadChildren: () => import('./features/store/pages/store.module').then(m => m.StoreModule)
+    loadChildren: () => import('./pages/store/store.module').then(m => m.StoreModule)
   },
   // {
   //   path: 'queue/:id',
