@@ -1,7 +1,7 @@
 import { Component, Input, Output, EventEmitter } from '@angular/core';
-import { AttendantUnion } from '../../../../models/attendant-union';
-import { QueueAttendant } from '../../../../models/queue-attendat.model';
-import { ScheduleAttendant } from '../../../../models/schedule-attendat.model copy';
+import { AttendantUnion } from 'src/app/core/models/attendant-union';
+import { QueueAttendant } from 'src/app/core/models/queue-attendat.model';
+import { ScheduleAttendant } from 'src/app/core/models/schedule-attendat.model';
 
 @Component({
   selector: 'app-attendant-card-mobile',

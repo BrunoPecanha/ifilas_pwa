@@ -5,11 +5,11 @@ import { IonicModule } from '@ionic/angular';
 
 import { StorePageRoutingModule } from './store-routing.module';
 
-import { StoreDesktopComponent } from '../../features/store/ui/desktop/store-desktop.component';
-import { StoreMobileComponent } from '../../features/store/ui/mobile/store-mobile.component';
-import { AttendantCardMobileComponent } from '../../features/store/ui/mobile/components/attendant-card-mobile/attendant-card-mobile.component';
 import { StorePage } from './store.page';
 import { SharedModule } from 'src/app/shared/shared.module';
+import { StoreDesktopComponent } from 'src/app/features/store/desktop/store-desktop.component';
+import { AttendantCardMobileComponent } from 'src/app/features/store/mobile/attendant-card-mobile/attendant-card-mobile.component';
+import { StoreMobileComponent } from 'src/app/features/store/mobile/store-mobile.component';
 
 @NgModule({
   declarations: [

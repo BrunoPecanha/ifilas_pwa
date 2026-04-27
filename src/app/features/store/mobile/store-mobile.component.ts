@@ -2,9 +2,10 @@ import { Component, OnInit, OnDestroy } from '@angular/core';
 import { Router } from '@angular/router';
 import { AlertController, ToastController } from '@ionic/angular';
 import { Subject, takeUntil, finalize } from 'rxjs';
+import { AttendantUnion } from 'src/app/core/models/attendant-union';
+import { Store } from 'src/app/core/models/store.model';
 import { AttendantService } from 'src/app/core/services/attendant.service';
-import { AttendantUnion } from '../../models/attendant-union';
-import { Store } from '../../models/store.model';
+
 
 @Component({
   selector: 'app-store-mobile',
@@ -171,9 +172,9 @@ export class StoreMobileComponent implements OnInit, OnDestroy {
       await this.attendantService.selectAttendant(attendant.id);
 
       if (attendant.type === 'queue') {
-        this.router.navigate(['/queue', attendant.id]);
+        this.router.navigate(['/service', attendant.id]);
       } else {
-        this.router.navigate(['/schedule', attendant.id]);
+        this.router.navigate(['/service', attendant.id]);
       }
     } catch (error) {
       console.error('Error selecting attendant:', error);

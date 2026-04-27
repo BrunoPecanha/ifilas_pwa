@@ -712,8 +712,7 @@ export class ServiceMobileComponent {
 
 
   getBack() {
-    console.log('[Mock] Voltar para seleção de profissional');
-    this.presentAlert('Voltar', 'Redirecionando para seleção de profissional');
+     this.router.navigate(['/store']);
 
     // Descomente quando tiver a rota
     // this.router.navigate(['/select-professional'], {

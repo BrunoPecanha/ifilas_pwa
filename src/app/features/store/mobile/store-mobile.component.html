@@ -1,15 +1,12 @@
 <app-custom-header
   [title]="'Profissionais'"
   [subtitle]="store?.name || 'Selecione um profissional'"
-  [showStartButton]="true"
-  startIconName="chevron-back-outline"
-  [showEndButton]="true"
+  [showStartButton]="false"
+  [showEndButton]="false"
   endIconName="notifications-outline"
-  [showNotificationBadge]="true"
+  [showNotificationBadge]="false"
   [hideOnScroll]="false"
   [floating]="true"
-  (onStartClick)="goBack()"
-  (onEndClick)="handleNotificationClick()"
 ></app-custom-header>
 
 <ion-content
